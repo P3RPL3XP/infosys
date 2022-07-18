@@ -146,8 +146,8 @@
 				</i>
 			<hr>
 				<div class="btp">
-					<button id="bt13" class="bt" onclick="yes2();" style="display:inline; "><img id="" src="coorect_3.jpg" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;YES</span></button>
-					<button id="bt14" class="bt" onclick="no2();" style="display:inline; "><img id="" src="wrong.png" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;NO</span></button>
+					<button id="bt13" class="bt" onclick="yes7();" style="display:inline; "><img id="" src="coorect_3.jpg" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;YES</span></button>
+					<button id="bt14" class="bt" onclick="no7();" style="display:inline; "><img id="" src="wrong.png" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;NO</span></button>
 				</div>
 			</div>			
 		</div>
@@ -155,18 +155,27 @@
 			<b>If Yes,please provide details of the same</b>
 			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p><br><br> <p>*</p>
 			<div class="subd">
-			<b>If Yes,please provide details of the same</b>
-			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p><br><br> <p>*</p>
+			
 			<input type="text" onkeypress="vk7();">
 			<p class="requied7">&#8855;This is a required question  
 			</p>
+			</div>
+
+
+
+
+
+
 		</div>
 		</div>
 		<center>
 			<div class="npbt">
 				<button class="sbt next">PREVIOUS PAGE</button>
-				<button class="sbt pre">NEXT PAGE</button>
+				<button class="sbt pre" onclick="return sub();">NEXT PAGE</button>
+
+			
 			</div>
+			
 		</center>	
 </div>
 <div class="errors">
@@ -186,7 +195,7 @@
 			</label>
 		</div>
 		<hr>
-		<div class="sd">
+		<div class="sd" id="sd1">
 			<label class="p40">
 				If Yes,please provide details of the same
 			</label>
@@ -197,7 +206,7 @@
 				<img src="eye.jpg" class="eye">
 			</label>
 		</div>
-		<div class="sd">
+		<div class="sd" id="sd2">
 			<label class="p40">
 				If Yes,please provide details of the same
 			</label>
@@ -208,7 +217,7 @@
 				<img src="eye.jpg" class="eye">
 			</label>
 		</div>
-		<div class="sd">
+		<div class="sd" id="sd3">
 			<label class="p40">
 				If Yes,please provide details of the same
 			</label>
@@ -219,7 +228,7 @@
 				<img src="eye.jpg" class="eye">
 			</label>
 		</div>
-		<div class="sd">
+		<div class="sd" id="sd4">
 			<label class="p40">
 				If Yes,please provide details of the same
 			</label>
@@ -230,7 +239,7 @@
 				<img src="eye.jpg" class="eye">
 			</label>
 		</div>
-		<div class="sd">
+		<div class="sd" id="sd5">
 			<label class="p40">
 				If Yes,please provide details of the same
 			</label>
@@ -241,7 +250,7 @@
 				<img src="eye.jpg" class="eye">
 			</label>
 		</div>
-		<div class="sd">
+		<div class="sd" id="sd6">
 			<label class="p40">
 				If Yes,please provide details of the same
 			</label>
@@ -252,7 +261,7 @@
 				<img src="eye.jpg" class="eye">
 			</label>
 		</div>
-		<div class="sd">
+		<div class="sd" id="sd7">
 			<label class="p40">
 				If Yes,please provide details of the same
 			</label>
@@ -301,30 +310,38 @@ function vk7(){
 }
 
 
-
-
+var yone=0;
 	function yes1(){
+		yone=1;
 		document.getElementById("bt1").style.border="2px solid purple"
 		document.querySelector('.in1').style.display='block';
 		document.getElementById('bt1'). style. borderColor = 'purple';
 		document.getElementById('bt1'). style. backgroundColor ='#F6CEFC';
 		document.getElementById('bt2'). style. borderColor = 'white';
 		document.getElementById('bt2'). style. backgroundColor = 'white';
+		return true;
+		
 setTimeout("ChangeColor2()", 2000);
 	}
+var no=0;
 	function no1(){
+		no=1;
 		document.getElementById("bt2").style.border="2px solid purple"
 			document.querySelector('.in1').style.display='none';
 			document.getElementById('bt1'). style. borderColor = 'white';
 			document.getElementById('bt2'). style. borderColor = 'purple';
 			document.getElementById('bt2'). style. backgroundColor ='#F6CEFC';
 			document.getElementById('bt1'). style. backgroundColor = 'white';
+			return true;
 setTimeout("ChangeColor2()", 2000);
-	
+
+
 
 
 	}
+var ytwo=0;
 	function yes2(){
+		ytwo=1;
 		document.getElementById("bt3").style.border="2px solid purple"
 		document.querySelector('.in2').style.display='block';
 		document.getElementById('bt3'). style. borderColor = 'purple';
@@ -333,7 +350,9 @@ setTimeout("ChangeColor2()", 2000);
 		document.getElementById('bt4'). style. backgroundColor = 'white';
 setTimeout("ChangeColor2()", 2000);
 	}
+var notwo=0;
 	function no2(){
+		notwo=1;
 		document.getElementById("bt4").style.border="2px solid purple"
 			document.querySelector('.in2').style.display='none';
 			document.getElementById('bt3'). style. borderColor = 'white';
@@ -424,13 +443,11 @@ setTimeout("ChangeColor2()", 2000);
 			document.getElementById('bt12'). style. borderColor = 'purple';
 			document.getElementById('bt12'). style. backgroundColor ='#F6CEFC';
 			document.getElementById('bt11'). style. backgroundColor = 'white';
-setTimeout("ChangeColor2()", 2000);
+setTimeout("ChangeColor2()", 2000);}
 	
-
-
-	}
-	function yes7(){
+function yes7(){
 		document.getElementById("bt13").style.border="2px solid purple"
+		document.querySelector('.in7').style.display='block';
 		document.getElementById('bt13'). style. borderColor = 'purple';
 		document.getElementById('bt13'). style. backgroundColor ='#F6CEFC';
 		document.getElementById('bt14'). style. borderColor = 'white';
@@ -439,15 +456,37 @@ setTimeout("ChangeColor2()", 2000);
 	}
 	function no7(){
 		document.getElementById("bt14").style.border="2px solid purple"
+			document.querySelector('.in7').style.display='none';
 			document.getElementById('bt13'). style. borderColor = 'white';
 			document.getElementById('bt14'). style. borderColor = 'purple';
 			document.getElementById('bt14'). style. backgroundColor ='#F6CEFC';
 			document.getElementById('bt13'). style. backgroundColor = 'white';
 setTimeout("ChangeColor2()", 2000);
-	
-
 
 	}
+ function sub(){
+	if(yone==1 |no==1 & ytwo==1|notwo){
+		document.getElementById('sd2').style.display='none';
+	}
+	else if(ytwo==1 |notwo==1){
+		document.getElementById('sd2').style.display='none';
+		return true;
+	}
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	/* function yes(){
 		document.querySelector('.in2').style.display='block';
 	}
