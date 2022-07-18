@@ -7,7 +7,7 @@
 	<link rel="icon" href="logo1.png">
 	<link rel="stylesheet" type="text/css" href="infosys1.css">
 </head>
-<body class="bg_error">
+<body class="bg_error" id="body">
 <div id="bg">
 	<div id="m">
 			<center>
@@ -29,17 +29,21 @@
 			</b>
 			<hr>
 				<div class="btp">
-					<button class="bt"><!-- <span>&#10003;</span> -->YES</button>
-					<button class="bt">@ NO</button>
+					<button id="bt1" class="bt" onclick="yes1();" style="display:inline; "><img id="" src="coorect_3.jpg" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;YES</span></button>
+					<button id="bt2" class="bt" onclick="no1();" style="display:inline; "><img id="" src="wrong.png" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;NO</span></button>
+				
 				</div>
 			</div>			
 		</div>
-		<div class="infield in1">
+		<div class="infield in1" >
+		
 			<br>
-			<hr>
+		
 			<b>If Yes,please provide details of the same</b>
-			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p>
-			
+			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p><br><br> <p>*</p>
+			<input type="text" onkeypress="vk();">
+			<p class="requied">&#8855;This is a required question  
+			</p>
 		</div>
 		<div class="question">
 			<div class="hd">
@@ -48,79 +52,91 @@
 			</b>
 			<hr>
 				<div class="btp">
-					<button class="bt">@ YES</button>
-					<button class="bt">@ NO</button>
+					<button id="bt3" class="bt" onclick="yes2();" style="display:inline; "><img id="" src="coorect_3.jpg" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;YES</span></button>
+					<button id="bt4" class="bt" onclick="no2();" style="display:inline; "><img id="" src="wrong.png" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;NO</span></button>
 				</div>
 			</div>			
 		</div>
-		<div class="infield in1"><br>
-			<hr>
+		<div class="infield in2"><br>
+	
 			<b>If Yes,please provide details of the same</b>
-			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p></div>
-
+			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p><br><br> <p>*</p>
+			<input type="text" onkeypress="vk2();">
+			<p class="requied2">&#8855;This is a required question  
+			</p></div>
 		<div class="question">
 			<div class="hd">
 				<b>3.Has any warrant for your arrest or summons for your appearance been issued or an order prohibiting your entry into or exit from any country,been issued by a court of law or any governmental authority? 
 			</b>
 			<hr>
 				<div class="btp">
-					<button class="bt">@ YES</button>
-					<button class="bt">@ NO</button>
+					<button id="bt5" class="bt" onclick="yes3();" style="display:inline; "><img id="" src="coorect_3.jpg" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;YES</span></button>
+					<button id="bt6" class="bt" onclick="no3();" style="display:inline; "><img id="" src="wrong.png" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;NO</span></button>
 				</div>
 			</div>			
 		</div>
-		<div class="infield in1"><br>
-			<hr>
+		<div class="infield in3"><br>
+		
 			<b>If Yes,please provide details of the same</b>
-			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p></div>
-
+			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p><br><br> <p>*</p>
+			<input type="text" onkeypress="vk3();">
+			<p class="requied3">&#8855;This is a required question  
+			</p></div>
 		<div class="question">
 			<div class="hd">
 				<b>4.Have you at any time been subject to or are being subject to any investingations by the financial market regulator such as Securities and Exchange Board of India?
 			</b>
 			<hr>
 				<div class="btp">
-					<button class="bt">@ YES</button>
-					<button class="bt">@ NO</button>
+					<button id="bt7" class="bt" onclick="yes4();" style="display:inline; "><img id="" src="coorect_3.jpg" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;YES</span></button>
+					<button id="bt8" class="bt" onclick="no4();" style="display:inline; "><img id="" src="wrong.png" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;NO</span></button>
 				</div>
 			</div>			
 		</div>
-		<div class="infield in1"><br>
-			<hr>
+		<div class="infield in4"><br>
+		
 			<b>If Yes,please provide details of the same</b>
-			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p></div>
-
+			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p><br><br> <p>*</p>
+			<input type="text" onkeypress="vk4();">
+			<p class="requied4">&#8855;This is a required question  
+			</p></div>
 		<div class="question">
 			<div class="hd">
 				<b>5.Are you aware of you being subject of any investigation by any governmental authority?
 			</b>
 			<hr>
 				<div class="btp">
-					<button class="bt">@ YES</button>
-					<button class="bt">@ NO</button>
+					<button id="bt9" class="bt" onclick="yes5();" style="display:inline; "><img id="" src="coorect_3.jpg" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;YES</span></button>
+					<button id="bt10" class="bt" onclick="no5();" style="display:inline; "><img id="" src="wrong.png" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;NO</span></button>
 				</div>
 			</div>			
 		</div>
-		<div class="infield in1"><br>
-			<hr>
+		<div class="infield in5"><br>
+			
 			<b>If Yes,please provide details of the same</b>
-			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p></div>
-
+			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p><br><br> <p>*</p>
+			<input type="text" onkeypress="vk5();">
+			<p class="requied5">&#8855;This is a required question  
+			</p></div>
 		<div class="question">
 			<div class="hd">
 				<b>6.Are there any criminal proceedings pending against you before any court of law in India or outside india?
 			</b>
 			<hr>
 				<div class="btp">
-					<button class="bt">@ YES</button>
-					<button class="bt">@ NO</button>
+					<button id="bt11" class="bt" onclick="yes6();" style="display:inline; "><img id="" src="coorect_3.jpg" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;YES</span></button>
+					<button id="bt12" class="bt" onclick="no6();" style="display:inline; "><img id="" src="wrong.png" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;NO</span></button>
 				</div>
 			</div>			
 		</div>
-		<div class="infield in1"><br>
-			<hr>
+		<div class="infield in6"><br>
+		
 			<b>If Yes,please provide details of the same</b>
-			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p></div>
+			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p><br><br> <p>*</p>
+			<input type="text" onkeypress="vk6();">
+			<p class="requied6">&#8855;This is a required question  
+			</p>
+		</div>
 		<div class="question qseven">
 			<div class="hd">
 				<p>7.Are you subject to any *Sanctions Laws?</p>
@@ -130,16 +146,21 @@
 				</i>
 			<hr>
 				<div class="btp">
-					<button class="bt">@ YES</button>
-					<button class="bt">@ NO</button>
+					<button id="bt13" class="bt" onclick="yes2();" style="display:inline; "><img id="" src="coorect_3.jpg" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;YES</span></button>
+					<button id="bt14" class="bt" onclick="no2();" style="display:inline; "><img id="" src="wrong.png" width="20px" height="20px" style="border-radius:50%;"><span class="key">&nbsp;NO</span></button>
 				</div>
 			</div>			
 		</div>
-		<div class="infield in1"><br>
-			<hr>
+		<div class="infield in7"><br>
+			<b>If Yes,please provide details of the same</b>
+			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p><br><br> <p>*</p>
 			<div class="subd">
 			<b>If Yes,please provide details of the same</b>
-			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p></div>
+			<p  class="font">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p><br><br> <p>*</p>
+			<input type="text" onkeypress="vk7();">
+			<p class="requied7">&#8855;This is a required question  
+			</p>
+		</div>
 		</div>
 		<center>
 			<div class="npbt">
@@ -247,5 +268,223 @@
 	
 </div>
 </div>
+<script>
+
+function vk(){
+	var reg = /^\d/
+	var val =document.querySelector('.requied').value;
+if(reg.test(val)){
+			document.querySelector('.requied').style.visibility='visible';
+}
+else{
+	document.querySelector('.requied').style.visibility='hidden';
+}
+	}
+	
+function vk2(){
+	document.querySelector('.requied2').style.visibility='hidden';
+}
+function vk3(){
+	document.querySelector('.requied3').style.visibility='hidden';
+}
+function vk4(){
+	document.querySelector('.requied4').style.visibility='hidden';
+}
+function vk5(){
+	document.querySelector('.requied5').style.visibility='hidden';
+}
+function vk6(){
+	document.querySelector('.requied6').style.visibility='hidden';
+}
+function vk7(){
+	document.querySelector('.requied7').style.visibility='hidden';
+}
+
+
+
+
+	function yes1(){
+		document.getElementById("bt1").style.border="2px solid purple"
+		document.querySelector('.in1').style.display='block';
+		document.getElementById('bt1'). style. borderColor = 'purple';
+		document.getElementById('bt1'). style. backgroundColor ='#F6CEFC';
+		document.getElementById('bt2'). style. borderColor = 'white';
+		document.getElementById('bt2'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	}
+	function no1(){
+		document.getElementById("bt2").style.border="2px solid purple"
+			document.querySelector('.in1').style.display='none';
+			document.getElementById('bt1'). style. borderColor = 'white';
+			document.getElementById('bt2'). style. borderColor = 'purple';
+			document.getElementById('bt2'). style. backgroundColor ='#F6CEFC';
+			document.getElementById('bt1'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	
+
+
+	}
+	function yes2(){
+		document.getElementById("bt3").style.border="2px solid purple"
+		document.querySelector('.in2').style.display='block';
+		document.getElementById('bt3'). style. borderColor = 'purple';
+		document.getElementById('bt3'). style. backgroundColor ='#F6CEFC';
+		document.getElementById('bt4'). style. borderColor = 'white';
+		document.getElementById('bt4'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	}
+	function no2(){
+		document.getElementById("bt4").style.border="2px solid purple"
+			document.querySelector('.in2').style.display='none';
+			document.getElementById('bt3'). style. borderColor = 'white';
+			document.getElementById('bt4'). style. borderColor = 'purple';
+			document.getElementById('bt4'). style. backgroundColor ='#F6CEFC';
+			document.getElementById('bt3'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	
+
+
+	}
+	function yes3(){
+		document.getElementById("bt5").style.border="2px solid purple"
+		document.querySelector('.in3').style.display='block';
+		document.getElementById('bt5'). style. borderColor = 'purple';
+		document.getElementById('bt5'). style. backgroundColor ='#F6CEFC';
+		document.getElementById('bt6'). style. borderColor = 'white';
+		document.getElementById('bt6'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	}
+	function no3(){
+		document.getElementById("bt6").style.border="2px solid purple"
+			document.querySelector('.in3').style.display='none';
+			document.getElementById('bt5'). style. borderColor = 'white';
+			document.getElementById('bt6'). style. borderColor = 'purple';
+			document.getElementById('bt6'). style. backgroundColor ='#F6CEFC';
+			document.getElementById('bt5'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	
+
+
+	}
+	function yes4(){
+		document.getElementById("bt7").style.border="2px solid purple"
+		document.querySelector('.in4').style.display='block';
+		document.getElementById('bt7'). style. borderColor = 'purple';
+		document.getElementById('bt7'). style. backgroundColor ='#F6CEFC';
+		document.getElementById('bt8'). style. borderColor = 'white';
+		document.getElementById('bt8'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	}
+	function no4(){
+		document.getElementById("bt8").style.border="2px solid purple"
+			document.querySelector('.in4').style.display='none';
+			document.getElementById('bt7'). style. borderColor = 'white';
+			document.getElementById('bt8'). style. borderColor = 'purple';
+			document.getElementById('bt8'). style. backgroundColor ='#F6CEFC';
+			document.getElementById('bt7'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	
+
+
+	}
+	function yes5(){
+		document.getElementById("bt9").style.border="2px solid purple"
+		document.querySelector('.in5').style.display='block';
+		document.getElementById('bt9'). style. borderColor = 'purple';
+		document.getElementById('bt9'). style. backgroundColor ='#F6CEFC';
+		document.getElementById('bt10'). style. borderColor = 'white';
+		document.getElementById('bt10'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	}
+	function no5(){
+		document.getElementById("bt10").style.border="2px solid purple"
+			document.querySelector('.in5').style.display='none';
+			document.getElementById('bt9'). style. borderColor = 'white';
+			document.getElementById('bt10'). style. borderColor = 'purple';
+			document.getElementById('bt10'). style. backgroundColor ='#F6CEFC';
+			document.getElementById('bt9'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	
+
+
+	}
+	function yes6(){
+		document.getElementById("bt11").style.border="2px solid purple"
+		document.querySelector('.in6').style.display='block';
+		document.getElementById('bt11'). style. borderColor = 'purple';
+		document.getElementById('bt11'). style. backgroundColor ='#F6CEFC';
+		document.getElementById('bt12'). style. borderColor = 'white';
+		document.getElementById('bt12'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	}
+	function no6(){
+		document.getElementById("bt12").style.border="2px solid purple"
+			document.querySelector('.in6').style.display='none';
+			document.getElementById('bt11'). style. borderColor = 'white';
+			document.getElementById('bt12'). style. borderColor = 'purple';
+			document.getElementById('bt12'). style. backgroundColor ='#F6CEFC';
+			document.getElementById('bt11'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	
+
+
+	}
+	function yes7(){
+		document.getElementById("bt13").style.border="2px solid purple"
+		document.getElementById('bt13'). style. borderColor = 'purple';
+		document.getElementById('bt13'). style. backgroundColor ='#F6CEFC';
+		document.getElementById('bt14'). style. borderColor = 'white';
+		document.getElementById('bt14'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	}
+	function no7(){
+		document.getElementById("bt14").style.border="2px solid purple"
+			document.getElementById('bt13'). style. borderColor = 'white';
+			document.getElementById('bt14'). style. borderColor = 'purple';
+			document.getElementById('bt14'). style. backgroundColor ='#F6CEFC';
+			document.getElementById('bt13'). style. backgroundColor = 'white';
+setTimeout("ChangeColor2()", 2000);
+	
+
+
+	}
+	/* function yes(){
+		document.querySelector('.in2').style.display='block';
+	}
+	function no(){
+			document.querySelector('.in2').style.display='none';
+	}
+	function yes(){
+		document.querySelector('.in3').style.display='block';
+	}
+	function no(){
+			document.querySelector('.in3').style.display='none';
+	}
+	function yes(){
+		document.querySelector('.in4').style.display='block';
+	}
+	function no(){
+			document.querySelector('.in4').style.display='none';
+	}
+	function yes(){
+		document.querySelector('.in5').style.display='block';
+	}
+	function no(){
+			document.querySelector('.in5').style.display='none';
+	}
+	function yes(){
+		document.querySelector('.in6').style.display='block';
+	}
+	function no(){
+			document.querySelector('.in6').style.display='none';
+	}
+	function yes(){
+		document.querySelector('.in7').style.display='block';
+	}
+	function no(){
+			document.querySelector('.in7').style.display='none';
+	}
+ */
+</script>
 </body>
 </html>
