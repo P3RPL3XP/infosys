@@ -60,7 +60,7 @@
 }
 .infield{
     z-index: -1;
-	width:1250px; 
+	width:1157px; 
 	height:250px;
 margin-top: -21px;
     	margin-bottom: 20px;
@@ -261,15 +261,4 @@ hr{
 
 }
 
-/*New changes.....*/
-/*.warning{
-	visibility:hidden;
-	border: 1px solid red;
-	background: #DE350B;
-	color: white;
-	font: 16px roboto;
-	width:1135px;
-	height: 33px;
-	margin-left:-30px;
-	padding-left:20px
-}*/
+
